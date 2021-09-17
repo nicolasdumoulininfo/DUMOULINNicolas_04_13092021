@@ -1,7 +1,19 @@
+/*Variables*/
+
+var(couleur-fond, #FFFFFF);
+var(couleur-btn, #fb956a);
+
+/*nouveau css
+.flex-position{
+    display:flex;
+    justify-content: column;
+}
+*/
+
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background-color: var(couleur-fond);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -24,7 +36,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: var(couleur-fond) url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -680,6 +692,10 @@ p {
     font-size: 11px;
 }
 
+.p-description{
+    font-size: 2rem;
+}
+
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -692,7 +708,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: var(couleur-fond)!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -736,7 +752,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: var(couleur-fond)!important;
 }
 
 .portfolio-thumb {
@@ -763,7 +779,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #FFFFFF;
+    background-color: var(couleur-fond);
 }
 
 .bgc-dark-slate-blue {
@@ -780,16 +796,16 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: var(couleur-fond)!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: var(couleur-fond)!important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: var(couleur-fond)!important;
 }
 
 .ltc-white:hover {
