@@ -4,7 +4,6 @@
 <!-- correction n°1-->
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="seo, site web, site internet, agence web design, responsive, referencement web">
 
     <!-- correction n°8-->
 	<meta name="description" content="La chouette agence est une agence web design qui aide les entreprises a devenir attractive et visibles sur le internet">
@@ -23,7 +22,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	
 
     <title>La Chouette Agence</title>
 
@@ -35,15 +34,15 @@
 </head>
 <body>
 <!-- Principal conteneur -->
-<div class="page-container">
+<div class="page-container" id="page-container">
     
 <!-- bloc-0 -->
 
-<div class="container bloc-sm">
+<div id="menu" class="container bloc-sm">
 
 		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="paris web design logo agence web meilleure agence" height="40" /></a>
+			<div id="navbar-header" class="navbar-header">
+				<a class="navbar-brand"><img src="img/la-chouette-agence.png" alt="paris web design logo agence web meilleure agence" height="40" /></a>
 				
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span>
@@ -55,9 +54,9 @@
 			</div>
 
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
+				<ul id="menu-ul" class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a href="#page-container">Accueil</a>
 					</li>
 					<li>
 						<a href="contact.html">Contact</a>
@@ -101,9 +100,9 @@
 				<div class="text-center">
 					<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<h2 class=" h2spe mg-md text-center">
 					Web design
-				</h3>
+				</h2>
 				<p class="text-center ">
 					Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
 				</p>
@@ -112,9 +111,9 @@
 				<div class="text-center">
 					<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
-					&nbsp;Stratégie
-				</h3>
+				<h2 class=" h2spe mg-md text-center">
+					Stratégie
+				</h2>
 				<p class="text-center ">
 					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
 				</p>
@@ -123,9 +122,9 @@
 				<div class="text-center">
 					<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
 				</div>
-				<h3 class="mg-md text-center">
+				<h2 class="h2spe mg-md text-center">
 					Illustrations
-				</h3>
+				</h2>
 				<p class="text-center ">
 					Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
 				</p>
@@ -163,13 +162,13 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<p class="p-description">Nous travaillons avec beaucoup de clients,<br>voici nos réalisations.</p>
+				<h2>Nous travaillons avec beaucoup de clients,<br>voici nos réalisations.</h2>
 			</div>
 		</div>
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
 				<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-					<img src="img/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" />
+					<img src="img/redim/1.jpg" alt="paris web design logo agence web meilleure agence et refonte site web journal" class="img-responsive portfolio-thumb" />
 				</a>
 
 				<h3 class="mg-md text-center">
@@ -181,7 +180,7 @@
 			</div>
 			<div class="col-sm-6">
 				<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
-					<img src="img/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" />
+					<img src="img/redim/2.jpg" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" />
 				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site web pour photographes
@@ -194,7 +193,7 @@
 		<div class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
 				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
-					<img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/>
+					<img src="img/redim/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/>
 				</a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
@@ -205,7 +204,7 @@
 			</div>
 			<div class="col-sm-6">
 				<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
-					<img src="img/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" />
+					<img src="img/redim/4.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" />
 				</a>
 				<h3 class="mg-md text-center">
 					Conception d'un site pour une agence de mariage
@@ -235,51 +234,40 @@
 <!-- bloc-5-cta END -->
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<p id="spe-p-footer" class="text-center">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
+
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" title="Twitter" href="#page-container"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" title="facebook" href="#page-container"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" title="png" href="#page-container"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" title="instagram" href="#page-container"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
-				<div class="row">
-					<div class="col-sm-4">
-						Partenaires
-							<ul>
-								<li><a href="voiture.com">voiture.com</a></li>
-								<li><a href="pizza.com">pizza.com</a></li>
-								<li><a href="matoiture.com">matoiture.com</a></li>
-								<li><a href="immobilierseo.com">immobilierseo.com</a></li>
-							</ul>		
-					</div>
-
-					
-				</div>
+			
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
