@@ -2,22 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="description" content="Une idée, un projet, contactez nous, nous serons ravi de le réaliser">
+    <!-- correction n°8-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" integrity="sha512-qp27nuUylUgwBZJHsmm3W7klwuM5gke4prTvPok3X5zi50y3Mo8cgpeXegWWrdfuXyF2UdLWK/WCb5Mv7CKHcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
     <title>contact</title>
 
     
@@ -28,39 +29,41 @@
 </head>
 <body>
 <!-- Principal conteneur -->
-<div class="page-container">
+<div aria-label="cette page est constitué de 4 sections" id="contact" class="page-container">
     
 	<!-- bloc-0 -->
-	<div class="bloc bgc-white l-bloc " id="bloc-0">
-		<div class="container bloc-sm">
-			<nav id="navbarcontact" class="navbar row">
+	<div id="menu" class="container bloc-sm">
+
+		<nav aria-label="premiere section menu navigation"class="navbar row">
+			<div id="navbar-header" class="navbar-header">
+				<a href="/" class="navbar-brand"><img class="imgchouette" src="img/la-chouette-agence.png" alt="logo de la meilleure agence web de paris"/></a>
 				
-					<a class="navbar-brand"></a><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
-					
-					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-						
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+
+			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+				<ul id="menu-ul" class="site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html#page-container">Accueil</a>
+					</li>
+					<li>
+						<a href="contact.html?navbar">Contact</a>
+					</li>
+				</ul>
+			</div>
 			
-					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-						<ul class="site-navigation nav navbar-nav">
-							<li>
-								<a href="index.html">Accueil</a>
-							</li>
-							<li>
-								<a href="#page-container">Contact</a>
-							</li>
-						</ul>
-					</div>
-			</nav>
-		</div>
-	</div>	
+		</nav>
+</div>
 	<!-- bloc-0 END -->
 
 	<!-- bloc-6 -->
-	<div id="#couleur-spe-policesurfond" class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+	<div aria-label="deuxième section Parlons web design" id="#couleur-spe-policesurfond" class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-12">
@@ -78,14 +81,14 @@
 	<!-- bloc-6 END -->
 
 	<!-- bloc-7 -->
-	<div class="bloc bgc-white l-bloc" id="bloc-7">
+	<div aria-label="troisième section formulaire de contact" class="bloc bgc-white l-bloc" id="bloc-7">
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
 
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form role="form" id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 						<div class="form-group">
-							<label for="name">Nom</label>
+							<label for="name">Nom</label >
 							<input name="Nom" id="name" type="text" class="form-control" required />
 						</div>
 
@@ -122,14 +125,37 @@
 	<!-- ScrollToTop Button END-->
 
 
-	<!-- Footer - bloc-8 -->
-	<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+				<!-- Footer - bloc-8 -->
+	<footer aria-label="dernière section le pied de page" class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 		<div class="container bloc-sm">
 			<div class="row">
 				<div class="col-sm-12">
 					<p id="spe-p-footer" class="text-center">
 						La chouette agence - Agence web basée à Lyon.<br>
 					</p>
+
+					<div id="aligne-icone" class="row row-no-gutters social">
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" title="Twitter" href="/?twitter"><span class="fa fa-twitter icon-md"></span></a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" title="facebook" href="/?facebook"><span class="fa fa-facebook icon-md"></span></a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" title="png" href="/?png"><span class="fa fa-dribbble icon-md"></span></a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" title="instagram" href="/?instagram"><span class="fa fa-instagram icon-md"></span></a>
+							</div>
+						</div>
+				
 				</div>
 			</div>
 		</div>
