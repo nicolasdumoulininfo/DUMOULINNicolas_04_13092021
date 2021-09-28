@@ -16,8 +16,11 @@
     color: #333333!important;
 }
 
-#couleur-spe-policesurfond{
+.couleur-spe-policesurfond{
+    /*background-color: #aa9f9a;*/
+    /*background-color: var(--couleur-fond-texture-contact);*/
     color:var(--couleur-police-btn);
+    background-color: var(--couleur-fond-texture-contact);
 }
 
 #menu{
@@ -46,7 +49,7 @@ footer p{
     color:var(--couleur-police-btn)!important;
 }
 
-#p-police{
+.p-police{
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -58,6 +61,14 @@ ul{
 .imgchouette{
     height: 40px;
 }
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+  input:valid {
+    border: 1px solid black;
+  }
 
 /*---->class ajoutées:*/
 
@@ -163,7 +174,16 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    
 }
+
+.texture-paper-contact::before {
+    background: url("img/texture-paper.png");
+    background-size: 280px 280px;
+    background-color: var(--couleur-fond-texture-contact);
+    
+}
+
 
 .b-parallax {
     background-attachment: fixed;
@@ -925,13 +945,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
