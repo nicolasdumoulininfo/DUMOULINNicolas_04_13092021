@@ -919,7 +919,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/redim/image-de-presentation.bmp");
+    background-image: url("img/redim/image-de-presentation-png.png");
 }
 
 @media (max-width: 1024px) {
